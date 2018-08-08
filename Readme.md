@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Александр Трофимов](https://up.htmlacademy.ru/htmlcss/22/user/704529).
-* Наставник: `Неизвестно`.
+* Наставник: [Елена Забара](https://htmlacademy.ru/profile/lena___elena).
 
 ---
 
