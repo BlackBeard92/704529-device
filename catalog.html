@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Девайс. Каталог товаров</title>
+</head>
+<body>
+  <header class="main-header">
+      <nav class="main-navigation">
+        <a class="button logo" href="index.html">DEVICE</a>
+        <ul class="site-navigation">
+          <li class="catalog-menu">
+            <a class="button" href="catalog.html">Каталог товаров</a>
+            <ul class="sub-menu">
+              <li><a class="button" href="#">Виртуальная реальность</a></li>
+              <li><a class="button" href="#">Моноподы для селфи</a></li>
+              <li><a class="button" href="#">Экшн-камеры</a></li>
+              <li><a class="button" href="#">Фитнес-браслеты</a></li>
+              <li><a class="button" href="#">Умные часы</a></li>
+              <li><a class="button" href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+          <li class="delivery"><a class="button" href="delivery.html">Доставка</a></li>
+          <li class="guarantee"><a class="button" href="guarantee.html">Гарантия</a></li>
+          <li class="contacts"><a class="button" href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="profile"><a class="button" href="#">Валентин Петухов</a></li>
+          <li class="exit"><a class="button" href="#">Выйти</a></li>
+        </ul>
+        <p class="compare"><a class="button" href="#">Сравнить</a></p>
+        <p class="basket"><a class="button" href="#">Корзина</a></p>
+        <!-- Поиск по сайту -->
+      </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li><a class="button" href="index.html">Главная</a></li>
+          <li><a class="button" href="catalog.html">Каталог товаров</a></li>
+          <li class="breadcrumbs-current">Моноподы для селфи</li>
+        </ul>
+
+      <section class="filters">
+        <h2>Фильтры:</h2>
+        <!--Форма-->
+      </section>
+
+      <section class="sorting">
+        <h2>Сортировка:</h2>
+        <ul class="options">
+          <li class="option-price">
+            <a href="#">По цене</a>
+            <ul class="sub-price">
+              <li><a href="#">По возрастанию</a></li>
+              <li><a href="#">По убыванию</a></li>
+            </ul>
+          </li>
+          <li class="option-type"><a href="#">По типу</a></li>
+          <li class="option-popular"><a href="#">По популярности</a></li>
+        </ul>
+      </section>
+
+      <section class="catalog">
+        <h2 class="visually-hidden">Список товаров</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <img src="http://placehold.it/360x380" width="360" height="380" alt="Любительская селфи-палка">
+            <div class="item-hover">
+              <button class="item-basket"></button>
+              <button class="item-compare"></button>
+            </div>
+            <h3><a href="#">Любительская селфи-палка</a></h3>
+            <p class="price">500 руб.</p>
+          </li>
+          <li class="catalog-item">
+            <img src="http://placehold.it/360x380" width="360" height="380" alt="Профессиональная селфи-палка">
+            <div class="item-hover">
+              <button class="item-basket"></button>
+              <button class="item-compare"></button>
+            </div>
+            <h3><a href="#">Профессиональная селфи-палка</a></h3>
+            <p class="price">1500 руб.</p>
+          </li>
+          <li class="catalog-item">
+            <img src="http://placehold.it/360x380" width="360" height="380" alt="Непотопляемая селфи-палка">
+            <div class="item-hover">
+              <button class="item-basket"></button>
+              <button class="item-compare"></button>
+            </div>
+            <h3><a href="#">Непотопляемая селфи-палка</a></h3>
+            <p class="price">2500 руб.</p>
+          </li>
+          <li class="catalog-item">
+            <img src="http://placehold.it/360x380" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+            <div class="item-hover">
+              <button class="item-basket"></button>
+              <button class="item-compare"></button>
+            </div>
+            <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
+            <p class="price">4900 руб.</p>
+          </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item"><a>Назад</a></li>
+          <li class="pagination-item"><a href="#">1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Вперед</a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <a class="button logo">DEVICE</a>
+      <p class="address">г. Москва, ул. Строителей, 15</p>
+      <p class="phone">Тел.: +7(495)495-95-95</p>
+      <ul class="user-navigation">
+        <li class="profile"><a class="button" href="#">Валентин Петухов</a></li>
+        <li class="exit"><a class="button" href="#">Выйти</a></li>
+      </ul>
+      <p class="compare"><a class="button" href="#">Сравнить</a></p>
+      <p class="basket"><a class="button" href="#">Корзина</a></p>
+      <ul>
+        <li><a class="button" href="delivery.html">Доставка</a></li>
+        <li><a class="button" href="guarantee.html">Гарантия</a></li>
+        <li><a class="button" href="contacts.html">Контакты</a></li>
+      </ul>
+      <ul class="footer-social">
+        <li><a class="social-button" href="#">Facebook</a></li>
+        <li><a class="social-button" href="#">Instagram</a></li>
+        <li><a class="social-button" href="#">Twitter</a></li>
+      </ul>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+    </footer>
+</body>
+</html>
