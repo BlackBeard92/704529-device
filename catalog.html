@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>HTML Academy: Девайс. Каталог товаров</title>
-</head>
-<body>
-  <header class="main-header">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Девайс. Каталог товаров</title>
+  </head>
+  <body>
+    <header class="main-header">
       <nav class="main-navigation">
-        <a class="button logo" href="index.html">DEVICE</a>
-        <ul class="site-navigation">
-          <li class="catalog-menu">
-            <a class="button" href="catalog.html">Каталог товаров</a>
-            <ul class="sub-menu">
-              <li><a class="button" href="#">Виртуальная реальность</a></li>
-              <li><a class="button" href="#">Моноподы для селфи</a></li>
-              <li><a class="button" href="#">Экшн-камеры</a></li>
-              <li><a class="button" href="#">Фитнес-браслеты</a></li>
-              <li><a class="button" href="#">Умные часы</a></li>
-              <li><a class="button" href="#">Квадрокоптеры</a></li>
-            </ul>
-          </li>
-          <li class="delivery"><a class="button" href="delivery.html">Доставка</a></li>
-          <li class="guarantee"><a class="button" href="guarantee.html">Гарантия</a></li>
-          <li class="contacts"><a class="button" href="contacts.html">Контакты</a></li>
-        </ul>
+        <a class="logo logo-link">DEVICE</a>
+        <!-- Поиск по сайту -->
         <ul class="user-navigation">
           <li class="profile"><a class="button" href="#">Валентин Петухов</a></li>
           <li class="exit"><a class="button" href="#">Выйти</a></li>
         </ul>
         <p class="compare"><a class="button" href="#">Сравнить</a></p>
         <p class="basket"><a class="button" href="#">Корзина</a></p>
-        <!-- Поиск по сайту -->
+        <ul class="site-navigation">
+          <li class="catalog-menu">
+            <a class="catalog-link" href="catalog.html">Каталог товаров</a>
+            <ul class="sub-menu">
+              <li><a class="sub-link" href="#">Виртуальная реальность</a></li>
+              <li><a class="sub-link" href="#">Моноподы для селфи</a></li>
+              <li><a class="sub-link" href="#">Экшн-камеры</a></li>
+              <li><a class="sub-link" href="#">Фитнес-браслеты</a></li>
+              <li><a class="sub-link" href="#">Умные часы</a></li>
+              <li><a class="sub-link" href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+          <li class="delivery"><a class="services-link" href="delivery.html">Доставка</a></li>
+          <li class="guarantee"><a class="services-link" href="guarantee.html">Гарантия</a></li>
+          <li class="contacts"><a class="services-link" href="contacts.html">Контакты</a></li>
+        </ul>
       </nav>
     </header>
 
     <main>
         <h1 class="page-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
-          <li><a class="button" href="index.html">Главная</a></li>
-          <li><a class="button" href="catalog.html">Каталог товаров</a></li>
-          <li class="breadcrumbs-current">Моноподы для селфи</li>
+          <li><a class="link" href="index.html">Главная</a></li>
+          <li><a class="link" href="catalog.html">Каталог товаров</a></li>
+          <li class="breadcrumbs-current"><a class="current-link">Моноподы для селфи</a></li>
         </ul>
 
       <section class="filters">
@@ -52,13 +52,15 @@
         <ul class="options">
           <li class="option-price">
             <a href="#">По цене</a>
-            <ul class="sub-price">
-              <li><a href="#">По возрастанию</a></li>
-              <li><a href="#">По убыванию</a></li>
-            </ul>
+
           </li>
           <li class="option-type"><a href="#">По типу</a></li>
           <li class="option-popular"><a href="#">По популярности</a></li>
+
+        </ul>
+        <ul class="arrows">
+          <li><a href="#">По возрастанию</a></li>
+          <li><a href="#">По убыванию</a></li>
         </ul>
       </section>
 
@@ -68,8 +70,8 @@
           <li class="catalog-item">
             <img src="http://placehold.it/360x380" width="360" height="380" alt="Любительская селфи-палка">
             <div class="item-hover">
-              <button class="item-basket"></button>
-              <button class="item-compare"></button>
+              <button class="item-basket">В корзину</button>
+              <button class="item-compare">Добавить к сравнению</button>
             </div>
             <h3><a href="#">Любительская селфи-палка</a></h3>
             <p class="price">500 руб.</p>
@@ -77,17 +79,17 @@
           <li class="catalog-item">
             <img src="http://placehold.it/360x380" width="360" height="380" alt="Профессиональная селфи-палка">
             <div class="item-hover">
-              <button class="item-basket"></button>
-              <button class="item-compare"></button>
+              <button class="item-basket">В корзину</button>
+              <button class="item-compare">Добавить к сравнению</button>
             </div>
             <h3><a href="#">Профессиональная селфи-палка</a></h3>
             <p class="price">1500 руб.</p>
           </li>
-          <li class="catalog-item">
+          <li class="catalog-item new-item">
             <img src="http://placehold.it/360x380" width="360" height="380" alt="Непотопляемая селфи-палка">
             <div class="item-hover">
-              <button class="item-basket"></button>
-              <button class="item-compare"></button>
+              <button class="item-basket">В корзину</button>
+              <button class="item-compare">Добавить к сравнению</button>
             </div>
             <h3><a href="#">Непотопляемая селфи-палка</a></h3>
             <p class="price">2500 руб.</p>
@@ -95,8 +97,8 @@
           <li class="catalog-item">
             <img src="http://placehold.it/360x380" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
             <div class="item-hover">
-              <button class="item-basket"></button>
-              <button class="item-compare"></button>
+              <button class="item-basket">В корзину</button>
+              <button class="item-compare">Добавить к сравнению</button>
             </div>
             <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
             <p class="price">4900 руб.</p>
@@ -113,26 +115,32 @@
     </main>
 
     <footer class="main-footer">
-      <a class="button logo">DEVICE</a>
-      <p class="address">г. Москва, ул. Строителей, 15</p>
-      <p class="phone">Тел.: +7(495)495-95-95</p>
-      <ul class="user-navigation">
-        <li class="profile"><a class="button" href="#">Валентин Петухов</a></li>
-        <li class="exit"><a class="button" href="#">Выйти</a></li>
-      </ul>
-      <p class="compare"><a class="button" href="#">Сравнить</a></p>
-      <p class="basket"><a class="button" href="#">Корзина</a></p>
-      <ul>
-        <li><a class="button" href="delivery.html">Доставка</a></li>
-        <li><a class="button" href="guarantee.html">Гарантия</a></li>
-        <li><a class="button" href="contacts.html">Контакты</a></li>
-      </ul>
-      <ul class="footer-social">
-        <li><a class="social-button" href="#">Facebook</a></li>
-        <li><a class="social-button" href="#">Instagram</a></li>
-        <li><a class="social-button" href="#">Twitter</a></li>
-      </ul>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      <div class="footer-top">
+        <a class="logo logo-link">DEVICE</a>
+        <ul class="user-navigation">
+          <li class="profile"><a class="button" href="#">Валентин Петухов</a></li>
+          <li class="exit"><a class="button" href="#">Выйти</a></li>
+        </ul>
+        <p class="compare"><a class="button" href="#">Сравнить</a></p>
+        <p class="basket"><a class="button" href="#">Корзина</a></p>
+      </div>
+      <div class="footer-middle">
+        <p class="address">г. Москва, ул. Строителей, 15</p>
+        <ul>
+          <li><a class="services-link" href="delivery.html">Доставка</a></li>
+          <li><a class="services-link" href="guarantee.html">Гарантия</a></li>
+          <li><a class="services-link" href="contacts.html">Контакты</a></li>
+        </ul>
+        <p class="phone">Тел.: +7(495)495-95-95</p>
+      </div>
+      <div class="footer-bottom">
+        <ul class="footer-social">
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">Instagram</a></li>
+          <li><a class="social-button" href="#">Twitter</a></li>
+        </ul>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      </div>
     </footer>
 </body>
 </html>
