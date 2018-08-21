@@ -233,6 +233,7 @@ a {
   vertical-align: middle;
   color: #000000;
   text-transform: uppercase;
+  border: none;
 }
 
 .services button:active {
@@ -439,3 +440,225 @@ a {
 .write-us .button:active {
   color: rgba(0, 0, 0, 0.3);
 }
+
+/*===================================CATALOG.HTML====================================*/
+
+.main-header .exit {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-footer .exit {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.catalog-main h1 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.breadcrumbs {
+  list-style: none;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs li:hover,
+.breadcrumbs li:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs li:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+  background-color: #efefef;
+  font-size: 14px;
+}
+
+.filters h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filters legend {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters ul {
+  list-style: none;
+}
+
+.filters input + label {
+  font-size: 14px;
+  line-height: 40px;
+  text-align: left;
+  color: #000000;
+}
+
+.filters input:disabled+label {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.filters input:hover,
+.filters input:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.filters button {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  border: none;
+}
+.filters button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting {
+  background-color: #efefef;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.sorting h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.sorting ul {
+  list-style: none;
+}
+
+.sorting a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting a:hover,
+.sorting a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting a:active {
+  color: #000000;
+}
+
+.catalog h3 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.catalog p {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #464646;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog .item-hover {
+  opacity: 0;
+  background-color: #eeeeee;
+}
+
+.catalog-item img:hover+.item-hover {
+  opacity: 1;
+}
+
+.item-hover .item-basket {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+  border: none;
+}
+
+.item-hover .item-basket:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.item-hover .item-compare {
+  font-size: 13px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+.item-hover .item-compare:hover,
+.item-hover .item-compare:focus {
+  color: #000000;
+}
+
+.item-hover .item-compare:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.catalog .pagination-list {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ebebeb;
+  list-style: none;
+}
+
+.pagination-list .pagination-item {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-list .pagination-item a:hover,
+.pagination-list .pagination-item a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-list .pagination-item a:active {
+  color: #000000;
+}
+
+.pagination-list .backward a:hover,
+.pagination-list .forward a:hover,
+.pagination-list .backward a:focus,
+.pagination-list .forward a:focus {
+  background-color: #d9d9d9;
+}
+
+.pagination-list .backward a:active,
+.pagination-list .forward a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+

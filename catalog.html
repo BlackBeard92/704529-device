@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Девайс. Каталог товаров</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="logo logo-link" href="index.html" aria-label="Главная магазина DEVICE">DEVICE</a>
+        <a class="logo" href="index.html" aria-label="Главная магазина DEVICE">DEVICE</a>
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
           <label class="visually-hidden" for="search">Поиск по сайту</label>
           <input type="search" name="search" id="search" placeholder="Поиск по сайту">
@@ -38,7 +40,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="catalog-main">
       <h1 class="page-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
         <li><a class="link" href="index.html">Главная</a></li>
@@ -118,7 +120,7 @@
           <li class="catalog-item">
             <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
             <div class="item-hover">
-              <button class="button item-basket" type="button">В корзину</button>
+              <button class="item-basket" type="button">В корзину</button>
               <button class="item-compare" type="button">Добавить к сравнению</button>
             </div>
             <h3><a href="#">Любительская селфи-палка</a></h3>
@@ -127,7 +129,7 @@
           <li class="catalog-item">
             <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
             <div class="item-hover">
-              <button class="button item-basket" type="button">В корзину</button>
+              <button class="item-basket" type="button">В корзину</button>
               <button class="item-compare" type="button">Добавить к сравнению</button>
             </div>
             <h3><a href="#">Профессиональная селфи-палка</a></h3>
@@ -136,7 +138,7 @@
           <li class="catalog-item new-item">
             <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
             <div class="item-hover">
-              <button class="button item-basket" type="button">В корзину</button>
+              <button class="item-basket" type="button">В корзину</button>
               <button class="item-compare" type="button">Добавить к сравнению</button>
             </div>
             <h3><a href="#">Непотопляемая селфи-палка</a></h3>
@@ -145,7 +147,7 @@
           <li class="catalog-item">
             <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
             <div class="item-hover">
-              <button class="button item-basket" type="button">В корзину</button>
+              <button class="item-basket" type="button">В корзину</button>
               <button class="item-compare" type="button">Добавить к сравнению</button>
             </div>
             <h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
@@ -153,18 +155,18 @@
           </li>
         </ul>
         <ul class="pagination-list" aria-label="Страницы каталога">
-          <li class="pagination-item"><a>Назад</a></li>
+          <li class="backward"><a>Назад</a></li>
           <li class="pagination-item"><a href="#">1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">Вперед</a></li>
+          <li class="forward"><a href="#">Вперед</a></li>
         </ul>
       </section>
     </main>
 
     <footer class="main-footer">
       <div class="footer-top">
-        <a class="logo logo-link" href="index.html" aria-label="Главная магазина DEVICE">DEVICE</a>
+        <a class="logo" href="index.html" aria-label="Главная магазина DEVICE">DEVICE</a>
         <ul class="user-navigation">
           <li class="profile"><a class="user-link" href="#">Валентин Петухов</a></li>
           <li class="exit"><a class="user-link" href="#">Выйти</a></li>
