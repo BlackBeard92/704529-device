@@ -55,8 +55,8 @@
             <legend>Стоимость</legend>
             <div class="range">
               <span></span>
-              <button class="range-button" type="button">Влево</button>
-              <button class="range-button" type="button">Вправо</button>
+              <button class="range-button visually-hidden" type="button">Влево</button>
+              <button class="range-button visually-hidden" type="button">Вправо</button>
             </div>
           </fieldset>
           <fieldset>
@@ -104,13 +104,13 @@
       <section class="sorting">
         <h2>Сортировка:</h2>
         <ul class="options">
-          <li class="option-price"><a href="#">По цене</a></li>
+          <li class="option-price"><a class="active" href="#">По цене</a></li>
           <li class="option-type"><a href="#">По типу</a></li>
           <li class="option-popular"><a href="#">По популярности</a></li>
         </ul>
         <ul class="arrows">
-          <li><a href="#">По возрастанию</a></li>
-          <li><a href="#">По убыванию</a></li>
+          <li><a href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+          <li><a class="active" href="#"><span class="visually-hidden">По убыванию</span></a></li>
         </ul>
       </section>
 
@@ -156,7 +156,7 @@
         </ul>
         <ul class="pagination-list" aria-label="Страницы каталога">
           <li class="backward"><a>Назад</a></li>
-          <li class="pagination-item"><a href="#">1</a></li>
+          <li class="pagination-item"><a class="active" href="#">1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="forward"><a href="#">Вперед</a></li>
@@ -185,11 +185,11 @@
       </div>
       <div class="footer-bottom">
         <ul class="footer-social" aria-label="Мы в соцсетях">
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">Instagram</a></li>
-          <li><a class="social-button" href="#">Twitter</a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Instagram</span></a></li>
+          <li><a class="social-button" href="#"><span class="visually-hidden">Twitter</span></a></li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
       </div>
     </footer>
 </body>

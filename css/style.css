@@ -62,9 +62,8 @@ a {
 
 .main-header {
   font-weight: 300;
-  line-height: 30px;
   color: #000000;
-  background-color: rgba(240, 197, 46, 0.5);
+  background-color: #f7e296;
 }
 
 .main-header .logo {
@@ -74,6 +73,12 @@ a {
   font-weight: 800;
   color: #000000;
   cursor: pointer;
+}
+.search input[type=search] {
+  line-height: 30px;
+}
+.search input[type=search]:placeholder {
+  line-height: 30px;
 }
 
 .search input[type=search]:hover::placeholder,
@@ -94,6 +99,8 @@ a {
 .user-navigation,
 .sub-menu {
   list-style: none;
+  background-color: inherit;
+  padding: 0;
 }
 
 .site-navigation {
@@ -102,13 +109,17 @@ a {
   line-height: 24px;
   font-weight: 800;
   color: #000000;
+  text-transform: uppercase;
 }
+
 .site-navigation .sub-menu {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 36px;
   font-weight: 300;
+  text-transform: none;
 }
+
 .search input[type=search]::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -150,7 +161,6 @@ a {
 }
 
 .slider h3 {
-
   font-size: 47px;
   line-height: 56px;
 }
@@ -182,7 +192,6 @@ a {
 }
 
 .slider td {
-  font-family: "Gilroy", Arial, sans-serif;
   font-weight: 300;
   font-size: 36px;
   line-height: 48px;
@@ -203,6 +212,7 @@ a {
 
 .popular-list {
   list-style: none;
+  padding: 0;
 }
 
 .services {
@@ -211,9 +221,6 @@ a {
 
 .services p {
   font-weight: 300;
-  font-size: 15px;
-  line-height: 30px;
-  color: #464646;
 }
 
 .services h3 {
@@ -234,6 +241,7 @@ a {
   color: #000000;
   text-transform: uppercase;
   border: none;
+  background-color: initial;
 }
 
 .services button:active {
@@ -242,6 +250,7 @@ a {
 
 .logotypes .brand-list {
   list-style: none;
+  padding: 0;
 }
 
 .info h2 {
@@ -254,9 +263,6 @@ a {
 
 .info p {
   font-weight: 300;
-  font-size: 15px;
-  line-height: 30px;
-  color: #464646;
 }
 
 .info ul {
@@ -291,9 +297,6 @@ a {
 
 .contacts p {
   font-weight: 300;
-  font-size: 15px;
-  line-height: 30px;
-  color: #464646;
 }
 
 .contacts .link {
@@ -343,17 +346,15 @@ a {
 
 .main-footer ul {
   list-style: none;
+  padding: 0;
 }
 
 .footer-top {
-  font-size: 15px;
   line-height: 36px;
   color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-middle p {
-  font-size: 15px;
-  line-height: 30px;
   color: #ffffff;
 }
 
@@ -391,12 +392,12 @@ a {
 .write-us textarea::placeholder {
   font-size: 14px;
   line-height: 18px;
-  font-weight: normal;
   color: rgba(70, 70, 70, 0.4)
 }
 
 .write-us ul {
   list-style: none;
+  padding: 0;
 }
 
 .write-us input,
@@ -419,7 +420,6 @@ a {
 .write-us textarea:focus {
   background-color: rgba(255, 255, 255, 0.5);
   outline: 3px solid rgba(240, 197, 46, 0.5);
-  color: #464646;
 }
 
 .write-us .button {
@@ -429,6 +429,8 @@ a {
   line-height: 24px;
   color: #000000;
   text-transform: uppercase;
+  border: none;
+  background-color: initial;
 }
 
 .write-us .button:hover,
@@ -439,6 +441,11 @@ a {
 
 .write-us .button:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.modal .modal-close {
+  background-color: initial;
+  border: none;
 }
 
 /*===================================CATALOG.HTML====================================*/
@@ -460,6 +467,7 @@ a {
 }
 
 .breadcrumbs {
+  padding: 0;
   list-style: none;
   font-size: 14px;
   line-height: 24px;
@@ -503,6 +511,7 @@ a {
 
 .filters ul {
   list-style: none;
+  padding: 0;
 }
 
 .filters input + label {
@@ -529,6 +538,7 @@ a {
   color: #000000;
   text-transform: uppercase;
   border: none;
+  background-color: initial;
 }
 .filters button:active {
   color: rgba(0, 0, 0, 0.3);
@@ -536,7 +546,6 @@ a {
 
 .sorting {
   background-color: #efefef;
-  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
 }
@@ -552,6 +561,7 @@ a {
 
 .sorting ul {
   list-style: none;
+  padding: 0;
 }
 
 .sorting a {
@@ -564,6 +574,10 @@ a {
 }
 
 .sorting a:active {
+  color: #000000;
+}
+
+.sorting .active {
   color: #000000;
 }
 
@@ -580,11 +594,11 @@ a {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
-  color: #464646;
 }
 
 .catalog-list {
   list-style: none;
+  padding: 0;
 }
 
 .catalog .item-hover {
@@ -604,6 +618,7 @@ a {
   color: #000000;
   text-transform: uppercase;
   border: none;
+  background-color: initial;
 }
 
 .item-hover .item-basket:active {
@@ -615,6 +630,7 @@ a {
   line-height: 36px;
   color: rgba(0, 0, 0, 0.5);
   border: none;
+  background-color: initial;
 }
 
 .item-hover .item-compare:hover,
@@ -635,6 +651,11 @@ a {
   text-transform: uppercase;
   background-color: #ebebeb;
   list-style: none;
+  padding: 0;
+}
+
+.catalog .active {
+  color: #000000;
 }
 
 .pagination-list .pagination-item {
