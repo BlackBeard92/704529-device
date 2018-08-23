@@ -77,7 +77,7 @@ a {
 .search input[type=search] {
   line-height: 30px;
 }
-.search input[type=search]:placeholder {
+.search input[type=search]::placeholder {
   line-height: 30px;
 }
 
