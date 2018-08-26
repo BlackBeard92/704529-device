@@ -34,6 +34,10 @@ html {
   box-sizing: inherit;
 }
 
+*:focus {
+  outline: none;
+}
+
 body {
   min-width: 1200px;
   margin: 0;
@@ -52,10 +56,15 @@ a {
 }
 
 main {
-  width: 1160px;
-  margin: 0 auto;
+  width: 100%;
+
 }
 
+.width-container {
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 
 .sub-menu,
 .slider .slide:nth-of-type(2),
@@ -83,8 +92,9 @@ main {
 .main-header {
   font-weight: 300;
   color: #000000;
-  margin: 10px auto;
-  width: 1160px;
+  padding: 10px 20px 0;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .main-navigation {
@@ -98,7 +108,9 @@ main {
 }
 
 .search {
-  width: 300px;
+  width: 440px;
+  min-height: 49px;
+  display: flex;
 }
 
 .header-container {
@@ -128,10 +140,6 @@ main {
   cursor: pointer;
   margin-right: auto;
   margin-bottom: 10px;
-}
-
-.search input[type=search] {
-  line-height: 30px;
 }
 
 .search input[type=search]::placeholder {
@@ -200,20 +208,29 @@ main {
 .search input[type=search] {
   background-color: inherit;
   border: none;
+  line-height: 30px;
+  width: 355px;
+  border-bottom: 2px solid transparent;
 }
 
 .search input[type=search]:focus {
-  background-color: inherit;
   border-bottom: 2px solid #000000;
 }
 
 .search button {
+  display: none;
   font: inherit;
   text-align: center;
   vertical-align: middle;
   border: 2px solid #000000;
   color: #000000;
   background-color: inherit;
+  width: 85px;
+  min-height: 49px;
+}
+
+.search input[type=search]:focus ~ button {
+  display: initial;
 }
 
 .search button:hover,
@@ -323,12 +340,16 @@ main {
 .services {
   background-color: #e5e5e5;
   margin-bottom: 95px;
+  width: 100%;
 }
 
 .services-container {
   display: flex;
   justify-content: space-between;
   min-height: 320px;
+  width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .services-container .container-left {
@@ -471,16 +492,15 @@ main {
 .main-footer {
   background-color: #464646;
   color: #ffffff;
-  padding-bottom: 65px;
 }
 
 .footer-container {
-  width: 1160px;
-  margin: 0 auto;
+  width: 1200px;
+  padding: 60px 20px 65px;
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
   justify-content: flex-start;
+  margin: 0 auto;
 }
 
 .footer-container .footer-top,
