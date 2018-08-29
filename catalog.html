@@ -9,36 +9,52 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="logo" href="index.html" aria-label="Главная магазина DEVICE">DEVICE</a>
-        <div class="header-container">
-          <form class="search" action="https://echo.htmlacademy.ru" method="get">
-            <label class="visually-hidden" for="search">Поиск по сайту</label>
-            <input type="search" name="search" id="search" placeholder="Поиск по сайту">
-            <button type="submit">Найти</button>
-          </form>
-          <ul class="user-navigation">
-            <li class="profile"><a class="user-link" href="#">Валентин Петухов</a></li>
-            <li class="exit"><a class="user-link" href="#">Выйти</a></li>
-          </ul>
-          <a class="user-link compare" href="#">Сравнить</a>
-          <a class="user-link basket" href="#">Корзина</a>
-        </div>
-        <ul class="site-navigation">
-          <li class="catalog-menu">
-            <a class="catalog-link" href="catalog.html">Каталог товаров</a>
-            <ul class="sub-menu">
-              <li><a class="sub-link" href="#">Виртуальная реальность</a></li>
-              <li><a class="sub-link" href="#">Моноподы для селфи</a></li>
-              <li><a class="sub-link" href="#">Экшн-камеры</a></li>
-              <li><a class="sub-link" href="#">Фитнес-браслеты</a></li>
-              <li><a class="sub-link" href="#">Умные часы</a></li>
-              <li><a class="sub-link" href="#">Квадрокоптеры</a></li>
+        <div class="container-absolute">
+          <a class="logo" href="index.html" aria-label="Главная магазина DEVICE">DEVICE</a>
+          <div class="header-container">
+            <form class="search" action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden" for="search">Поиск по сайту</label>
+              <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+              <button type="submit">Найти</button>
+            </form>
+            <ul class="user-navigation">
+              <li class="profile"><a class="user-link" href="#">Валентин Петухов</a></li>
+              <li class="exit"><a class="user-link" href="#">Выйти</a></li>
             </ul>
-          </li>
-          <li class="header-delivery"><a class="services-link" href="delivery.html">Доставка</a></li>
-          <li class="header-guarantee"><a class="services-link" href="guarantee.html">Гарантия</a></li>
-          <li class="header-contacts"><a class="services-link" href="contacts.html">Контакты</a></li>
-        </ul>
+            <a class="user-link compare" href="#">Сравнить</a>
+            <a class="user-link basket" href="#">Корзина</a>
+          </div>
+          <ul class="site-navigation">
+            <li class="catalog-menu">
+              <a class="header-letter-spacing catalog-link" href="catalog.html">Каталог товаров</a>
+              <ul class="sub-menu">
+                <li>
+                  <ul>
+                    <li><a class="sub-link" href="#">Виртуальная реальность</a></li>
+                    <li><a class="sub-link" href="catalog.html">Моноподы для селфи</a></li>
+                    <li><a class="sub-link" href="#">Экшн-камеры</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><a class="sub-link" href="#">Фитнес-браслеты</a></li>
+                    <li><a class="sub-link" href="#">Умные часы</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <ul>
+                    <li><a class="sub-link" href="#">Квадрокоптеры</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="header-letter-spacing header-delivery"><a class="services-link" href="delivery.html">Доставка</a></li>
+            <li class="header-letter-spacing header-guarantee"><a class="services-link" href="guarantee.html">Гарантия</a></li>
+            <li class="header-letter-spacing header-contacts"><a class="services-link" href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -176,7 +192,7 @@
         <div class="footer-top">
           <a class="logo" href="index.html" aria-label="Главная магазина DEVICE">DEVICE</a>
           <ul class="user-navigation">
-            <li class="profile"><a class="user-link" href="#">Валентин Петухов</a></li>
+            <li class="profile"><a class="footer-user-link user-link" href="#">Валентин Петухов</a></li>
             <li class="exit"><a class="user-link" href="#">Выйти</a></li>
           </ul>
           <a class="user-link compare" href="#">Сравнить</a>
@@ -189,15 +205,27 @@
             <li><a class="services-link" href="guarantee.html">Гарантия</a></li>
             <li><a class="services-link" href="contacts.html">Контакты</a></li>
           </ul>
-          <p class="phone">Тел.: +7(495)495-95-95</p>
+          <p class="phone">Тел.: +7 (495) 495-95-95</p>
         </div>
         <div class="footer-bottom">
           <ul class="footer-social" aria-label="Мы в соцсетях">
-            <li><a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a></li>
-            <li><a class="social-button" href="#"><span class="visually-hidden">Instagram</span></a></li>
-            <li><a class="social-button" href="#"><span class="visually-hidden">Twitter</span></a></li>
+            <li>
+              <a class="facebook social-button" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a class="instagram social-button" href="#">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a class="twitter social-button" href="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
           </ul>
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
+          <a class="html-academy" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
         </div>
       </div>
     </footer>
