@@ -740,6 +740,40 @@ main {
   width: 760px;
   padding-top: 73px;
   display: none;
+  position: relative;
+}
+
+.services-container .container-right::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.services-container .services-delivery::after {
+  background-image: url(../img/delivery.svg);
+  background-size: 136px 164px;
+  width: 136px;
+  height: 164px;
+  right: 66px;
+  top: 85px;
+}
+
+.services-container .services-guarantee::after {
+  background-image: url(../img/warranty.svg);
+  background-size: 171px 194px;
+  width: 171px;
+  height: 194px;
+  right: 45px;
+  top: 61px;
+}
+
+.services-container .services-credit::after {
+  background-image: url(../img/credit.svg);
+  background-size: 156px 180px;
+  width: 156px;
+  height: 186px;
+  right: 69px;
+  top: 62px;
 }
 
 .services #delivery:checked + div,
