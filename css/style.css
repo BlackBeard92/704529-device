@@ -65,14 +65,6 @@ a {
   margin: 0 auto;
 }
 
-
-
-.modal {
-  display: none;
-}
-
-
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1887,17 +1879,20 @@ a {
   letter-spacing: 3.3px;
 }
 
-.pagination-list .backward,
-.pagination-list .forward {
+.backward a ,
+.forward a {
   padding: 23px 30px;
+  display: block;
 }
 
 .pagination-list .forward {
   margin-left: auto;
+  padding: 0;
 }
 
 .pagination-list .backward {
   margin-right: 209px;
+  padding: 0;
 }
 
 .pagination-list .pagination-item {
