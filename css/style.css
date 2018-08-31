@@ -1290,11 +1290,23 @@ a {
   margin-right: 419px;
 }
 
+.map {
+  width: 960px;
+  height: 559px;
+  position: relative;
+}
+
+.map img {
+  width: 100%;
+  height: auto;
+}
+
 .write-us {
   background-color: #ffffff;
   color: #000000;
   width: 960px;
   padding: 95px 100px;
+  position: relative;
 }
 
 .write-us label {
@@ -1375,7 +1387,6 @@ a {
   color: rgba(0, 0, 0, 0.6);
 }
 
-
 .write-us .button:active {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -1383,8 +1394,22 @@ a {
 .modal .modal-close {
   background-color: initial;
   border: none;
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  top: 20px;
+  right: 20px;
+  padding: 0;
 }
 
+.modal .modal-close::before {
+  content: "";
+  display: block;
+  background-image: url(../img/modal-close.svg);
+  background-repeat: no-repeat;
+  width: 55px;
+  height: 55px;
+}
 /*===================================CATALOG.HTML====================================*/
 
 .catalog-navigation {
@@ -1459,19 +1484,31 @@ a {
 
 .main-container {
   display: flex;
-  padding-left: 50px;
+  padding-left: 60px;
 }
 
 .filters {
   background-color: #efefef;
   font-size: 14px;
-  width: 278px;
+  width: 268px;
   display: flex;
   flex-direction: column;
-  padding-top: 23px;
-  margin-right: auto;
-  padding-left: 10px;
-  padding-right: 68px;
+  position: relative;
+}
+
+.filters-form {
+  margin-right: 68px;
+}
+
+.filters::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: calc(100vw/2);
+  background-color: #efefef;
+  z-index: -1;
+  right: 200px;
 }
 
 .filters fieldset {
@@ -1492,6 +1529,26 @@ a {
   top: -13px;
 }
 
+.heading-wrap {
+  width: 100%;
+  padding-top: 23px;
+  margin-bottom: 82px;
+  padding-bottom: 23px;
+  background-color: #dbdbdb;
+  position: relative;
+}
+
+.heading-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: calc(100vw/2);
+  background-color: #dbdbdb;
+  z-index: -1;
+  right: 100px;
+}
+
 .filters h2 {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
@@ -1499,7 +1556,7 @@ a {
   line-height: 24px;
   color: #000000;
   text-transform: uppercase;
-  margin: 0 0 105px 0;
+  margin: 0;
   letter-spacing: 3.5px;
 }
 
@@ -1623,7 +1680,7 @@ a {
 .sorting-catalog {
   display: flex;
   flex-direction: column;
-  width: 760px;
+  width: 832px;
   margin-bottom: 78px;
 }
 
@@ -1634,7 +1691,20 @@ a {
   display: flex;
   margin-bottom: 70px;
   padding-top: 23px;
+  padding-left: 72px;
+  position: relative;
 }
+
+                                  .sorting::before {
+                                    content: "";
+                                    position: absolute;
+                                    top: 0;
+                                    height: 100%;
+                                    width: calc((100vw - 1177px) / 2);
+                                    background-color: #efefef;
+                                    z-index: -1;
+                                    left: 832px;
+                                  }
 
 .sorting h2 {
   font-family: "Gilroy", Arial, sans-serif;
@@ -1757,6 +1827,33 @@ a {
   position: relative;
 }
 
+.catalog-list .new-item::before {
+  content: "NEW";
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  vertical-align: middle;
+  text-align: center;
+  color: #000000;
+  top: 47px;
+  right: 40px;
+  opacity: 0.1;
+  position: absolute;
+}
+
+.catalog-list .new-item::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  top: 28px;
+  right: 27px;
+  opacity: 0.1;
+  position: absolute;
+}
+
 .catalog-list .catalog-item:nth-last-child(-n+2) {
   margin-bottom: 0;
 }
@@ -1773,13 +1870,14 @@ a {
   justify-content: space-between;
   margin: 0;
   margin-bottom: 15px;
+  padding-left: 72px;
 }
 
 .catalog-item .hover {
   margin-bottom: 24px;
 }
 
-.catalog-item .hover:hover .item-hover {
+.hover:hover .item-hover {
   display: flex;
 }
 
@@ -1810,6 +1908,7 @@ a {
   z-index: 0;
   letter-spacing: 3.5px;
   margin-top: 47.5%;
+  margin-bottom: 5px;
 }
 
 .item-hover .item-basket:before {
@@ -1861,17 +1960,14 @@ a {
   text-transform: uppercase;
   background-color: #ebebeb;
   list-style: none;
+  display: flex;
+  margin: 0;
   padding: 0;
+  margin-left: 72px;
 }
 
 .catalog .active {
   color: #000000;
-}
-
-.pagination-list {
-  display: flex;
-  margin: 0;
-  padding: 0;
 }
 
 .pagination-list li {
