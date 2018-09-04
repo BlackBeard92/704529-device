@@ -19,7 +19,7 @@
             </form>
             <ul class="user-navigation">
               <li class="profile login-link"><a class="user-link login" href="#">Валентин Петухов</a></li>
-              <li class="exit"><a class="user-link" href="#">Выйти</a></li>
+              <li><a class="user-link exit" href="#">Выйти</a></li>
             </ul>
             <a class="user-link compare" href="#">Сравнить</a>
             <a class="user-link basket" href="#">Корзина</a>
@@ -75,9 +75,17 @@
               <fieldset class="filters-price">
                 <legend>Стоимость</legend>
                 <div class="range">
-                  <span></span>
-                  <button class="range-button" type="button"><span class="visually-hidden">Влево</span></button>
-                  <button class="range-button" type="button"><span class="visually-hidden">Вправо</span></button>
+                  <span class="line"></span>
+
+                  <div class="container-button-left">
+                    <button class="range-button button-min" type="button"><span class="visually-hidden">Влево</span></button>
+                    <span class="min-price">от 0</span>
+                  </div>
+
+                  <div class="container-button-right">
+                    <button class="range-button button-max" type="button"><span class="visually-hidden">Вправо</span></button>
+                    <span class="max-price">до 5000</span>
+                  </div>
                 </div>
               </fieldset>
               <fieldset class="filters-color">

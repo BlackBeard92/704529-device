@@ -89,7 +89,8 @@ a {
   border: 0;
 
   clip: rect(0 0 0 0);
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
 }
 
 .main-header {
@@ -131,9 +132,9 @@ a {
 
 .header-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 31px;
-  flex-wrap: wrap;
 }
 
 .header-container .user-navigation {
@@ -180,8 +181,6 @@ a {
 
 .header-container .compare::before {
   left: 5px;
-
-  margin-top: -5px;
 
   background-image: url(../img/compare.svg);
 }
@@ -236,8 +235,42 @@ a {
   cursor: pointer;
 }
 
+.search input[type="search"]::-webkit-input-placeholder {
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search input[type="search"]:-ms-input-placeholder {
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search input[type="search"]::-ms-input-placeholder {
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .search input[type="search"]::placeholder {
   line-height: 30px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search input[type="search"]:hover::-webkit-input-placeholder,
+.main-header a:hover,
+.main-header a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search input[type="search"]:hover:-ms-input-placeholder,
+.main-header a:hover,
+.main-header a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search input[type="search"]:hover::-ms-input-placeholder,
+.main-header a:hover,
+.main-header a:focus {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .search input[type="search"]:hover::placeholder,
@@ -267,6 +300,7 @@ a {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   margin-right: -2px;
 
   font-weight: 800;
@@ -275,7 +309,6 @@ a {
   font-family: "Gilroy", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
-  flex-wrap: wrap;
 }
 
 .site-navigation ul {
@@ -304,15 +337,15 @@ a {
 .site-navigation .catalog-link:after {
   content: "";
 
+  display: inline-block;
   width: 16px;
   height: 16px;
+  margin-left: 12px;
 
   background-image: url(../img/plus.svg);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.3;
-  margin-left: 12px;
-  display: inline-block;
 }
 
 .site-navigation .catalog-menu {
@@ -354,17 +387,13 @@ a {
   margin-right: 0;
 }
 
-.search input[type="search"]::placeholder {
-  color: rgba(0, 0, 0, 0.3);
-}
-
 .search input[type="search"] {
   width: 355px;
   padding-left: 38px;
 
   line-height: 30px;
 
-  background-color: inherit;
+  background-color: #f7e296;
   border: none;
 }
 
@@ -397,12 +426,18 @@ a {
   text-align: center;
   color: #000000;
 
-  background-color: inherit;
+  background-color: #f7e296;
   border: 2px solid #000000;
 }
 
 .search input[type="search"]:focus ~ button {
-  display: initial;
+  display: block;
+}
+
+.search:active button {
+  display: block;
+
+  opacity: 0;
 }
 
 .search button:hover,
@@ -414,10 +449,6 @@ a {
 
 .search button:active {
   color: rgba(255, 255, 255, 0.3);
-}
-
-.search:active button {
-  display: block;
 }
 
 .slider {
@@ -442,7 +473,6 @@ a {
   left: 0;
 
   display: none;
-  justify-content: flex-end;
   min-height: 500px;
 }
 
@@ -458,6 +488,7 @@ a {
   background-image: url(../img/slider-button-empty.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
 }
 
 .slider .slide-button-1::before {
@@ -656,6 +687,7 @@ a {
   font-size: 13px;
   line-height: 20px;
   font-family: "Open Sans", Arial, sans-serif;
+  text-align: left;
   color: #464646;
 }
 
@@ -922,6 +954,8 @@ a {
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.5px;
+
+  cursor: pointer;
 }
 
 .services-button:first-of-type {
@@ -1424,16 +1458,16 @@ a {
 }
 
 .map {
-  display: none;
   position: fixed;
-  z-index: 3;
   top: 50%;
   left: 50%;
-  margin-top: -280px;
-  margin-left: -480px;
+  z-index: 3;
 
+  display: none;
   width: 960px;
   height: 559px;
+  margin-top: -280px;
+  margin-left: -480px;
 }
 
 .map img {
@@ -1442,13 +1476,13 @@ a {
 }
 
 .write-us {
-  display: none;
   position: fixed;
+  top: 50px;
+  left: 50%;
   z-index: 3;
 
+  display: none;
   width: 960px;
-  left: 50%;
-  top: 50px;
   margin-left: -480px;
   padding: 95px 100px;
 
@@ -1458,11 +1492,33 @@ a {
 }
 
 .write-us label {
+  margin-bottom: 7px;
+
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", Arial, sans-serif;
-  margin-bottom: 7px;
+}
+
+.write-us input::-webkit-input-placeholder,
+.write-us textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.write-us input:-ms-input-placeholder,
+.write-us textarea:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.write-us input::-ms-input-placeholder,
+.write-us textarea::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(70, 70, 70, 0.4);
 }
 
 .write-us input::placeholder,
@@ -1477,10 +1533,10 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
+  margin-bottom: 41px;
   padding: 0;
 
   list-style: none;
-  margin-bottom: 41px;
 }
 
 .write-us li {
@@ -1527,9 +1583,12 @@ a {
   border: 2px solid #f6dada;
 }
 .write-us .button {
-  width: 200px;
   position: relative;
   z-index: 0;
+
+  width: 200px;
+  padding: 9px 0 7px;
+
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -1538,9 +1597,9 @@ a {
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 3.6px;
+
   background-color: initial;
   border: none;
-  padding: 9px 0 7px;
 }
 
 .write-us .button::before {
@@ -1603,13 +1662,15 @@ a {
 }
 
 .overlay {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+
+  display: none;
   width: 100%;
   height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /*===================================CATALOG.HTML====================================*/
 
@@ -1709,6 +1770,89 @@ a {
   margin-right: 68px;
 }
 
+.filters-price .range {
+  position: relative;
+  z-index: 0;
+
+  min-height: 80px;
+  padding-top: 31px;
+}
+
+.filters-price .range::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #dbdbdb;
+}
+
+.filters-price .line {
+  position: absolute;
+  z-index: -1;
+
+  width: 60%;
+  height: 2px;
+
+  background-color: #91c92f;
+}
+
+.filters-price .range-button {
+  width: 20px;
+  height: 20px;
+  margin-top: auto;
+  margin-bottom: 1px;
+  padding: 0;
+
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px #dbdbdb;
+}
+
+.filters-price .range-button:active {
+  width: 22px;
+  height: 22px;
+
+  border: 9px solid #ffffff;
+}
+
+.container-button-left,
+.container-button-right {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50px;
+}
+
+.container-button-left .min-price,
+.container-button-right .max-price {
+  font-weight: 300;
+  line-height: 24px;
+  font-family: "Gilroy", Arial, sans-serif;
+  color: rgb(0, 0, 0, 0.2);
+}
+
+.container-button-left .min-price {
+  margin-left: 5px;
+}
+
+.container-button-right {
+  top: 16px;
+  left: 90px;
+}
+
+.container-button-left {
+  top: 16px;
+  left: -6px;
+
+  align-items: flex-start;
+}
+
 .filters::before {
   content: "";
   position: absolute;
@@ -1784,6 +1928,8 @@ a {
   position: relative;
 
   padding-left: 38px;
+
+  cursor: pointer;
 }
 
 .filters-color label::before {
@@ -1803,6 +1949,7 @@ a {
 
 .filters label:hover::before,
 .filters label:focus::before {
+  cursor: pointer;
   opacity: 0.6;
 }
 
@@ -1829,6 +1976,8 @@ a {
   position: relative;
 
   padding-left: 38px;
+
+  cursor: pointer;
 }
 
 .filters-option label::before {
@@ -1885,6 +2034,7 @@ a {
 
   background-color: initial;
   border: none;
+  cursor: pointer;
 }
 
 .filters .button-submit::before {
@@ -1964,6 +2114,8 @@ a {
 }
 
 .sorting .arrows {
+  min-width: 60px;
+  min-height: 20px;
   margin-left: auto;
 }
 
@@ -1982,11 +2134,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.2;
-}
-
-.arrows {
-  min-width: 60px;
-  min-height: 20px;
 }
 
 .arrows .down::before {
@@ -2085,6 +2232,7 @@ a {
   position: absolute;
   top: 47px;
   right: 40px;
+  z-index: 1;
 
   font-weight: 800;
   font-size: 14px;
@@ -2093,7 +2241,7 @@ a {
   vertical-align: middle;
   text-align: center;
   color: #000000;
-  z-index: 1;
+
   opacity: 0.1;
 }
 
@@ -2170,8 +2318,9 @@ a {
   text-transform: uppercase;
   letter-spacing: 3.5px;
 
-  background-color: initial;
+  background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .item-hover .item-basket:before {
@@ -2206,8 +2355,9 @@ a {
   line-height: 36px;
   color: rgba(0, 0, 0, 0.5);
 
-  background-color: initial;
+  background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .item-hover .item-compare:hover,
