@@ -4,6 +4,7 @@
   font-style: normal;
 
   src: url("../fonts/gilroyextrabold.woff2") format("woff2");
+  src: url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
@@ -12,6 +13,7 @@
   font-style: normal;
 
   src: url("../fonts/gilroylight.woff2") format("woff2");
+  src: url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
@@ -20,6 +22,7 @@
   font-style: normal;
 
   src: url("../fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
@@ -28,6 +31,7 @@
   font-style: normal;
 
   src: url("../fonts/opensanslight.woff2") format("woff2");
+  src: url("../fonts/opensanslight.woff") format("woff");
 }
 
 html {
