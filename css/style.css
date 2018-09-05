@@ -1473,11 +1473,25 @@ a {
   height: 559px;
   margin-top: -280px;
   margin-left: -480px;
+  background-color: #ffffff;
+}
+
+.map iframe {
+  position: absolute;
+  border: 0;
+  width: 960px;
+  height: 559px;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .map img {
   width: 100%;
   height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .write-us {
@@ -1603,7 +1617,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 3.6px;
 
-  background-color: initial;
+  background-color: #ffffff;
   border: none;
 }
 
@@ -1641,8 +1655,9 @@ a {
   height: 57px;
   padding: 0;
 
-  background-color: initial;
+  background-color: transparent;
   border: none;
+  z-index: 2;
 }
 
 .modal .modal-close::before {
@@ -1678,8 +1693,52 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.overlay-show {
+  display: block;
+  animation: overlay-effect 0.5s;
+}
+
 .modal-show {
   display: block;
+  animation: emergence 0.3s;
+}
+
+.modal-error {
+  animation: shake 0.3s;
+}
+
+@keyframes emergence {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: rotate(1deg);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: rotate(-1deg);
+  }
+}
+
+@keyframes overlay-effect {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 /*===================================CATALOG.HTML====================================*/
 
@@ -2040,7 +2099,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 3.5px;
 
-  background-color: initial;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
